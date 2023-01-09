@@ -45,32 +45,37 @@ const Main = () => {
       <div className="container">
         <div className="left-content">
           <Card
+            key={Math.random()}
             pokemon={pokeData}
             loading={loading}
             infoPokemon={(poke) => setPokeDex(poke)}
           />
           <br></br>
           <div className="btn-group">
-            {prevUrl && <button
-              onClick={() => {
-                setPokeData([]);
-                setUrl(prevUrl);
-              }}
-            >
-              Previous
-            </button>}
+            {prevUrl && (
+              <button
+                onClick={() => {
+                  setPokeData([]);
+                  setUrl(prevUrl);
+                }}
+              >
+                Previous
+              </button>
+            )}
 
-            {nextUrl && <button
-              onClick={() => {
-                setPokeData([]);
-                setUrl(nextUrl);
-              }}
-            >
-              Next
-            </button>}
+            {nextUrl && (
+              <button
+                onClick={() => {
+                  setPokeData([]);
+                  setUrl(nextUrl);
+                }}
+              >
+                Next
+              </button>
+            )}
           </div>
         </div>
-        
+
         <div className="right-content">
           <Pokeinfo data={pokeDex} />
         </div>
