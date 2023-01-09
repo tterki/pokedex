@@ -70,6 +70,7 @@ const Main = () => {
             </button>}
           </div>
         </div>
+        
         <div className="right-content">
           <Pokeinfo data={pokeDex} />
         </div>

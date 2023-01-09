@@ -48,7 +48,7 @@ body {
 
 .right-content img {
   margin: 2rem;
-  height: 200px;
+  height: 180px;
 }
 
 .right-content h1 {
@@ -86,7 +86,7 @@ body {
   outline: none;
   border: none;
   width: 150px;
-  padding: 0.3rem 0;
+  padding: 1.3rem 0;
   margin: 1rem;
   font-size: 17px;
   font-weight: bold;
